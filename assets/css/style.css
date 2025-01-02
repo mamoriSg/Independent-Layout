@@ -1,0 +1,100 @@
+body {
+    margin: 0; /* З самого початку прибираються відступи котрі були за замовчуванням  */
+    font-family: "Space Grotesk", serif;
+
+    font-size: 15px; /* Розмір шрифту по замовчуванню  */
+    line-height: 1.6; /* Міжстроковий відступ  */
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Container  */
+.container {
+    width: 100%; 
+    max-width: 1240px;
+    margin: 0 auto; /* Вирівнювання по центру  */
+}
+
+/* Intro  */
+.intro {
+    width: 100%;
+    height: 100vh;  /* Займає 100% екрану відвідувача  */
+}
+
+/* Header  */
+.header {
+    width: 100%;
+    padding-top: 60px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-size: 29px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* Nav  */
+
+.nav{
+    font-size: 20px;
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+
+    color: #000000;
+    text-decoration: none;   /* Прибирає підкреслювання у посилань за замовчування  */
+}
+
+.usual {
+    display: inline-block;
+    border-radius: 14%;
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+.usual:hover{
+    color: #000000;
+    background-color: #B9FF66;
+
+    transition: color .2s linear;
+}
+
+.button{
+    display: inline-block;
+    border: 2px solid #000000;
+    border-radius: 7%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #000000;
+    
+    transition: color .2s linear;
+}
